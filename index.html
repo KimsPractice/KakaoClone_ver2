@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>친구 | KakaoClone</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="statusBar">
+      <div class="statusBar__column">
+        <span class="statusBar__clock">13:54</span>
+      </div>
+      <div class="statusBar__column">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="statusBar__batteryLevel">65%</span>
+        <i class="fas fa-battery-half"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__headerColumn">
+        <h1 class="headerTitle">친구</h1>
+      </div>
+      <div class="header__headerColumn">
+        <span class="headerIcon"><i class="fas fa-search fa-lg"></i></span>
+        <span class="headerIcon"><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends_friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.png" class="gAvatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Kimspractice
+              </span>
+              <span class="friend__status">
+                to be a web Developer
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="friends__plus">
+        <h5 class="friends__title">플러스 친구</h5>
+        <div class="friends_friend friend">
+          <div class="friend__column">
+            <img src="images/avatar.png" class="gAvatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                플러스 친구
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="friends__list">
+        <h5 class="friend__title">친구 86</h5>
+        <li class="friends_friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.png" class="gAvatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Kimspractice
+              </span>
+              <span class="friend__status">
+                to be a web Developer
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__noewListening">
+              <span>나만, 봄 - 볼빨간사춘기</span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__listItem">
+          <a href="index.html" class="nav__listLink">
+            <i class="fas fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__listItem">
+          <a href="chats.html" class="nav__listLink">
+            <i class="far fa-comment fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__listItem">
+          <a href="find.html" class="nav__listLink">
+            <i class="fas fa-search fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__listItem">
+          <a href="more.html" class="nav__listLink">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
