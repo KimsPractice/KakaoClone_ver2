@@ -40,25 +40,31 @@
 
     <main class="chats">
       <ul class="chat__list">
-        <a href="chat.html">
         <li class="chats__chat chat">
-          <div class="chat__column">
-            <div class="chat__content">
-              <img src="images/avatar.png" class="chat__avatar gAavtar" />
-              <span class="chat__username">
-                Someone
-              </span>
-              <span class="chat__preview">
-                Let's do it !
-              </span>
+          <a href="chat.html">
+            <div class="friends__friend friend friend--lg">
+              <div class="friend__column">
+                <img src="images/avatar.png" class="mAvatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Someone
+                  </span>
+                  <span class="friend__bottomText">
+                    Some Text
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__noewListening">
+                  <span class="chat__timestamp">
+                    어제
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="chat__column">
-            <span class="chat_timestamp">어제</span>
-          </div>
+          </a>
         </li>
       </ul>
-    </a>
     </main>
     <nav class="nav">
       <ul class="nav__list">
@@ -69,6 +75,7 @@
         </li>
         <li class="nav__listItem">
           <a href="chats.html" class="nav__listLink">
+            <div class="nav__badge">300+</div>
             <i class="fas fa-comment fa-lg"></i>
           </a>
         </li>
