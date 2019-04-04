@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>검색 | KakaoClone</title>
+    <title>친구찾기 | KakaoClone</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -29,13 +29,72 @@
 
     <header class="header">
       <div class="header__headerColumn">
-        <h1 class="headerTitle">검색</h1>
+        <h1 class="headerTitle">친구찾기</h1>
       </div>
       <div class="header__headerColumn">
         <span class="headerIcon"><i class="fas fa-search fa-lg"></i></span>
         <span class="headerIcon"><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
+
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__headerList">
+          <li class="find__headerBtn header__btn">
+            <span class="headerBtn__icon">
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span class="headerBtn__title">
+              QR code
+            </span>
+          </li>
+          <li class="find__headerBtn header__btn">
+            <span class="headerBtn__icon">
+              <i class="far fa-address-book fa-2x"></i>
+            </span>
+            <span class="headerBtn__title">
+              연락처로 추가
+            </span>
+          </li>
+          <li class="find__headerBtn header__btn">
+            <span class="headerBtn__icon">
+              <i class="far fa-id-card fa-2x"></i>
+            </span>
+            <span class="headerBtn__title">
+              ID로 추가
+            </span>
+          </li>
+          <li class="find__headerBtn header__btn">
+            <span class="headerBtn__icon">
+              <i class="fas fa-user-plus fa-2x"></i>
+            </span>
+            <span class="headerBtn__title">
+              추천 친구
+            </span>
+          </li>
+        </ul>
+      </header>
+      <ul class="find__recommended">
+        <h5 class="find__title">
+          추천 친구
+        </h5>
+        <li class="find__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.png" class="gAvatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                SomeFriend
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__addBtn">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
