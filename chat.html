@@ -13,74 +13,87 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div class="statusBar">
-      <div class="statusBar__column">
-        <span class="statusBar__clock">13:54</span>
+  <body class="chat__body">
+    <div class="header__wrapper">
+      <div class="statusBar">
+        <div class="statusBar__column">
+          <span class="statusBar__clock">13:54</span>
+        </div>
+        <div class="statusBar__column">
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="statusBar__batteryLevel">65%</span>
+          <i class="fas fa-battery-half"></i>
+        </div>
       </div>
-      <div class="statusBar__column">
-        <i class="fas fa-bell"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="statusBar__batteryLevel">65%</span>
-        <i class="fas fa-battery-half"></i>
-      </div>
+
+      <header class="header">
+        <div class="header__headerColumn">
+          <a href="chats.html" class="header__backBtn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+
+          <h1 class="headerTitle">Someone</h1>
+        </div>
+        <div class="header__headerColumn">
+          <span class="headerIcon">
+            <i class="fas fa-search fa-lg"></i>
+          </span>
+          <span class="headerIcon">
+            <i class="fas fa-bars fa-lg"></i>
+          </span>
+        </div>
+      </header>
     </div>
 
-    <header class="header">
-      <div class="header__headerColumn">
-        <a href="chats.html" class="header__backBtn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-
-        <h1 class="headerTitle">Someone</h1>
-      </div>
-      <div class="header__headerColumn">
-        <span class="headerIcon">
-          <i class="fas fa-search fa-lg"></i>
-        </span>
-        <span class="headerIcon">
-          <i class="fas fa-bars fa-lg"></i>
-        </span>
-      </div>
-    </header>
-
-    <main class="chat">
+    <main class="chat__screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">2019년 4월 4일 목요일</span>
         <li class="incomingMessage message">
           <img src="images/avatar.png" class="mAvatar message__avatar" />
           <div class="message__content">
-            <span class="message__author">Someone</span>
+            <div class="message__author">Someone</div>
             <div class="message__bubble">
               Let's do it !
             </div>
           </div>
-          <span class="message__timestamp"></span>
         </li>
-      </ul>
 
-      <ul class="chat__messages">
-        <span class="chat__timestamp">2019년 4월 4일 목요일</span>
-        <li class="incomingMessage message">
-          <span class="message__timestamp"></span>
+        <li class="sent__message message">
           <div class="message__content">
             <div class="message__bubble">
-              Sure ! let's do this!
+              Sure! let's do this!
+            </div>
+          </div>
+        </li>
+
+        <li class="incomingMessage message">
+          <img src="images/avatar.png" class="mAvatar message__avatar" />
+          <div class="message__content">
+            <div class="message__author">Someone</div>
+            <div class="message__bubble">
+              Yeah !
+            </div>
+          </div>
+        </li>
+
+        <li class="sent__message message">
+          <div class="message__content">
+            <div class="message__bubble">
+              test !
             </div>
           </div>
         </li>
       </ul>
     </main>
 
-    <div class="chat__write">
-      <div class="chat__writeColumn">
+    <div class="chat__writeContainer">
+      <input type="text" class="chat__writeInput chat__write" />
+      <div class="chat__iconLeft chat__icon">
         <i class="far fa-plus-square"></i>
       </div>
-      <div class="chat__writeColumn">
-        <input type="text" class="chat__writeInput" />
-      </div>
-      <div class="chat__writeColumn">
+      <div class="chat__iconRight chat__icon">
         <span class="chat__writeIcon">
           <i class="far fa-smile"></i>
         </span>
@@ -88,6 +101,11 @@
           <i class="fas fa-microphone"></i>
         </span>
       </div>
+    </div>
+    <div class="mediaScreen">
+      <span class="mediaScreen__text">
+        Please make your screen smaller!!
+      </span>
     </div>
   </body>
 </html>

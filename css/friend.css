@@ -60,3 +60,13 @@
 .friend__noewListening span {
   opacity: 0.7;
 }
+
+.friend__addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
